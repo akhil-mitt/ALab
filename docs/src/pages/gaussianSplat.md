@@ -76,6 +76,11 @@ For the moment we have included SDR and HDR 8 bit png variants of the splat
 - SDR: sRGB - ACES 2.0 - SDR 100 nits (Rec709) (8 bit png)
 - HDR: Rec.2100-PQ - ACES-2.0 HDR 1000 nits (P3 D65 Limited) (8 bit png)
 
+## COLMAP Data
+Alongside the renders we have also released the COLMAP data as an optional download. This includes the pngs and COLMAP project data that was fed into the gaussian splatting codebase to generate a splat. This step isn't necessary when you have the 3d data already, and is an artifact of the original gsplat implementation used to generate the splats. 
+
+There are HDR and SDR project folders. Each contains an images folder, sparse folder, and database.db file. These make up a COLMAP project folder. you can find out more information here https://github.com/colmap/colmap and https://docs.gsplat.studio/main/examples/colmap.html
+
 ## Future plans
 
 1. Train the splat using 16 bit half floating point acescg exrs
